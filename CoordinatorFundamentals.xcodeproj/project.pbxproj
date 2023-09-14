@@ -9,20 +9,21 @@
 /* Begin PBXBuildFile section */
 		6BFAD4EC2AB216BA006F98D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD4EB2AB216BA006F98D6 /* AppDelegate.swift */; };
 		6BFAD4EE2AB216BA006F98D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD4ED2AB216BA006F98D6 /* SceneDelegate.swift */; };
-		6BFAD4F02AB216BA006F98D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD4EF2AB216BA006F98D6 /* ViewController.swift */; };
 		6BFAD4F52AB216BB006F98D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BFAD4F42AB216BB006F98D6 /* Assets.xcassets */; };
 		6BFAD4F82AB216BB006F98D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BFAD4F62AB216BB006F98D6 /* LaunchScreen.storyboard */; };
 		6BFAD5232AB31AC7006F98D6 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD5222AB31AC7006F98D6 /* Coordinator.swift */; };
 		6BFAD5252AB31B24006F98D6 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD5242AB31B24006F98D6 /* ApplicationCoordinator.swift */; };
 		6BFAD5292AB338AE006F98D6 /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD5282AB338AE006F98D6 /* OnboardingCoordinator.swift */; };
 		6BFAD52B2AB33904006F98D6 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD52A2AB33904006F98D6 /* OnboardingView.swift */; };
+		6BFAD52E2AB33CB5006F98D6 /* ScaledImageVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD52D2AB33CB5006F98D6 /* ScaledImageVIew.swift */; };
+		6BFAD5302AB34B31006F98D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD52F2AB34B31006F98D6 /* ContentView.swift */; };
+		6BFAD5322AB34E07006F98D6 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD5312AB34E07006F98D6 /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6BFAD4E82AB216BA006F98D6 /* CoordinatorFundamentals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorFundamentals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BFAD4EB2AB216BA006F98D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BFAD4ED2AB216BA006F98D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6BFAD4EF2AB216BA006F98D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6BFAD4F42AB216BB006F98D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BFAD4F72AB216BB006F98D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BFAD4F92AB216BB006F98D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -30,6 +31,9 @@
 		6BFAD5242AB31B24006F98D6 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		6BFAD5282AB338AE006F98D6 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
 		6BFAD52A2AB33904006F98D6 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		6BFAD52D2AB33CB5006F98D6 /* ScaledImageVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledImageVIew.swift; sourceTree = "<group>"; };
+		6BFAD52F2AB34B31006F98D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6BFAD5312AB34E07006F98D6 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 				6BFAD5212AB31A7B006F98D6 /* Main ViewController */,
 				6BFAD51F2AB31A4C006F98D6 /* Protocols */,
 				6BFAD4F42AB216BB006F98D6 /* Assets.xcassets */,
+				6BFAD52C2AB33C9E006F98D6 /* Helper */,
 				6BFAD4F62AB216BB006F98D6 /* LaunchScreen.storyboard */,
 				6BFAD4F92AB216BB006F98D6 /* Info.plist */,
 			);
@@ -94,8 +99,8 @@
 		6BFAD5212AB31A7B006F98D6 /* Main ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6BFAD4EF2AB216BA006F98D6 /* ViewController.swift */,
 				6BFAD5242AB31B24006F98D6 /* ApplicationCoordinator.swift */,
+				6BFAD52F2AB34B31006F98D6 /* ContentView.swift */,
 			);
 			path = "Main ViewController";
 			sourceTree = "<group>";
@@ -112,8 +117,33 @@
 		6BFAD5272AB3385B006F98D6 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				6BFAD5312AB34E07006F98D6 /* MainCoordinator.swift */,
+				6BFAD5332AB34E4C006F98D6 /* First */,
+				6BFAD5342AB34E57006F98D6 /* Second */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		6BFAD52C2AB33C9E006F98D6 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				6BFAD52D2AB33CB5006F98D6 /* ScaledImageVIew.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		6BFAD5332AB34E4C006F98D6 /* First */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		6BFAD5342AB34E57006F98D6 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Second;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,8 +218,10 @@
 			files = (
 				6BFAD5252AB31B24006F98D6 /* ApplicationCoordinator.swift in Sources */,
 				6BFAD5292AB338AE006F98D6 /* OnboardingCoordinator.swift in Sources */,
+				6BFAD52E2AB33CB5006F98D6 /* ScaledImageVIew.swift in Sources */,
+				6BFAD5322AB34E07006F98D6 /* MainCoordinator.swift in Sources */,
 				6BFAD5232AB31AC7006F98D6 /* Coordinator.swift in Sources */,
-				6BFAD4F02AB216BA006F98D6 /* ViewController.swift in Sources */,
+				6BFAD5302AB34B31006F98D6 /* ContentView.swift in Sources */,
 				6BFAD4EC2AB216BA006F98D6 /* AppDelegate.swift in Sources */,
 				6BFAD4EE2AB216BA006F98D6 /* SceneDelegate.swift in Sources */,
 				6BFAD52B2AB33904006F98D6 /* OnboardingView.swift in Sources */,

@@ -8,16 +8,21 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    
+    var doneRequested: () -> ()
+    
     var body: some View {
         TabView {
-            Image("dog")
-                .resizable()
-//                .scaledToFit()
+ScaledImageVIew(name: "dog")
                 .tag(0)
-            Image("cat")
+ScaledImageVIew(name: "cat")
                 .tag(1)
-            Image("eagle")
+ScaledImageVIew(name: "eagle")
                 .tag(2)
+            Button("Done") {
+                doneRequested()
+                
+            }
         }
         .tabViewStyle(PageTabViewStyle())
         .background(Color.black.ignoresSafeArea())
@@ -26,6 +31,8 @@ struct OnboardingView: View {
 
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingView()
+        OnboardingView(doneRequested: {
+            
+        } )
     }
 }
