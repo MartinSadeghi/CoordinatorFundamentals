@@ -6,8 +6,8 @@
 //
 
 import UIKit
+import Foundation
 import SwiftUI
-
 
 class ApplicationCoordinator: Coordinator {
     
