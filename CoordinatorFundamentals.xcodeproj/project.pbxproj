@@ -20,6 +20,10 @@
 		6BFAD5322AB34E07006F98D6 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD5312AB34E07006F98D6 /* MainCoordinator.swift */; };
 		6BFAD5382AB3565B006F98D6 /* FirstTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD5372AB3565B006F98D6 /* FirstTabCoordinator.swift */; };
 		6BFAD53A2AB356F5006F98D6 /* SecondTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD5392AB356F5006F98D6 /* SecondTabCoordinator.swift */; };
+		6BFAD53C2AB36841006F98D6 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD53B2AB36841006F98D6 /* FirstViewController.swift */; };
+		6BFAD53E2AB36861006F98D6 /* FirstDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD53D2AB36861006F98D6 /* FirstDetailView.swift */; };
+		6BFAD5412AB36877006F98D6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD53F2AB36877006F98D6 /* SecondViewController.swift */; };
+		6BFAD5422AB36877006F98D6 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BFAD5402AB36877006F98D6 /* SecondViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		6BFAD5312AB34E07006F98D6 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		6BFAD5372AB3565B006F98D6 /* FirstTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabCoordinator.swift; sourceTree = "<group>"; };
 		6BFAD5392AB356F5006F98D6 /* SecondTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabCoordinator.swift; sourceTree = "<group>"; };
+		6BFAD53B2AB36841006F98D6 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		6BFAD53D2AB36861006F98D6 /* FirstDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDetailView.swift; sourceTree = "<group>"; };
+		6BFAD53F2AB36877006F98D6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		6BFAD5402AB36877006F98D6 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				6BFAD5372AB3565B006F98D6 /* FirstTabCoordinator.swift */,
+				6BFAD53B2AB36841006F98D6 /* FirstViewController.swift */,
+				6BFAD53D2AB36861006F98D6 /* FirstDetailView.swift */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -148,6 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				6BFAD5392AB356F5006F98D6 /* SecondTabCoordinator.swift */,
+				6BFAD53F2AB36877006F98D6 /* SecondViewController.swift */,
+				6BFAD5402AB36877006F98D6 /* SecondViewController.xib */,
 			);
 			path = Second;
 			sourceTree = "<group>";
@@ -212,6 +224,7 @@
 			files = (
 				6BFAD4F82AB216BB006F98D6 /* LaunchScreen.storyboard in Resources */,
 				6BFAD4F52AB216BB006F98D6 /* Assets.xcassets in Resources */,
+				6BFAD5422AB36877006F98D6 /* SecondViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +238,10 @@
 				6BFAD5252AB31B24006F98D6 /* ApplicationCoordinator.swift in Sources */,
 				6BFAD5292AB338AE006F98D6 /* OnboardingCoordinator.swift in Sources */,
 				6BFAD52E2AB33CB5006F98D6 /* ScaledImageVIew.swift in Sources */,
+				6BFAD53C2AB36841006F98D6 /* FirstViewController.swift in Sources */,
+				6BFAD5412AB36877006F98D6 /* SecondViewController.swift in Sources */,
 				6BFAD5382AB3565B006F98D6 /* FirstTabCoordinator.swift in Sources */,
+				6BFAD53E2AB36861006F98D6 /* FirstDetailView.swift in Sources */,
 				6BFAD5322AB34E07006F98D6 /* MainCoordinator.swift in Sources */,
 				6BFAD5232AB31AC7006F98D6 /* Coordinator.swift in Sources */,
 				6BFAD5302AB34B31006F98D6 /* ContentView.swift in Sources */,
