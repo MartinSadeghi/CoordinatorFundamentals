@@ -54,14 +54,38 @@
 		6BFAD4EA2AB216BA006F98D6 /* CoordinatorFundamentals */ = {
 			isa = PBXGroup;
 			children = (
-				6BFAD4EB2AB216BA006F98D6 /* AppDelegate.swift */,
-				6BFAD4ED2AB216BA006F98D6 /* SceneDelegate.swift */,
-				6BFAD4EF2AB216BA006F98D6 /* ViewController.swift */,
+				6BFAD5202AB31A5E006F98D6 /* Application */,
+				6BFAD5212AB31A7B006F98D6 /* Main ViewController */,
+				6BFAD51F2AB31A4C006F98D6 /* Protocols */,
 				6BFAD4F42AB216BB006F98D6 /* Assets.xcassets */,
 				6BFAD4F62AB216BB006F98D6 /* LaunchScreen.storyboard */,
 				6BFAD4F92AB216BB006F98D6 /* Info.plist */,
 			);
 			path = CoordinatorFundamentals;
+			sourceTree = "<group>";
+		};
+		6BFAD51F2AB31A4C006F98D6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6BFAD5202AB31A5E006F98D6 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				6BFAD4EB2AB216BA006F98D6 /* AppDelegate.swift */,
+				6BFAD4ED2AB216BA006F98D6 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		6BFAD5212AB31A7B006F98D6 /* Main ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6BFAD4EF2AB216BA006F98D6 /* ViewController.swift */,
+			);
+			path = "Main ViewController";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
