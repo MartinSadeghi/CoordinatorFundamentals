@@ -18,6 +18,8 @@
 		6BFAD52E2AB33CB5006F98D6 /* ScaledImageVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD52D2AB33CB5006F98D6 /* ScaledImageVIew.swift */; };
 		6BFAD5302AB34B31006F98D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD52F2AB34B31006F98D6 /* ContentView.swift */; };
 		6BFAD5322AB34E07006F98D6 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD5312AB34E07006F98D6 /* MainCoordinator.swift */; };
+		6BFAD5382AB3565B006F98D6 /* FirstTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD5372AB3565B006F98D6 /* FirstTabCoordinator.swift */; };
+		6BFAD53A2AB356F5006F98D6 /* SecondTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFAD5392AB356F5006F98D6 /* SecondTabCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		6BFAD52D2AB33CB5006F98D6 /* ScaledImageVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledImageVIew.swift; sourceTree = "<group>"; };
 		6BFAD52F2AB34B31006F98D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6BFAD5312AB34E07006F98D6 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		6BFAD5372AB3565B006F98D6 /* FirstTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabCoordinator.swift; sourceTree = "<group>"; };
+		6BFAD5392AB356F5006F98D6 /* SecondTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 		6BFAD5332AB34E4C006F98D6 /* First */ = {
 			isa = PBXGroup;
 			children = (
+				6BFAD5372AB3565B006F98D6 /* FirstTabCoordinator.swift */,
 			);
 			path = First;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 		6BFAD5342AB34E57006F98D6 /* Second */ = {
 			isa = PBXGroup;
 			children = (
+				6BFAD5392AB356F5006F98D6 /* SecondTabCoordinator.swift */,
 			);
 			path = Second;
 			sourceTree = "<group>";
@@ -219,9 +225,11 @@
 				6BFAD5252AB31B24006F98D6 /* ApplicationCoordinator.swift in Sources */,
 				6BFAD5292AB338AE006F98D6 /* OnboardingCoordinator.swift in Sources */,
 				6BFAD52E2AB33CB5006F98D6 /* ScaledImageVIew.swift in Sources */,
+				6BFAD5382AB3565B006F98D6 /* FirstTabCoordinator.swift in Sources */,
 				6BFAD5322AB34E07006F98D6 /* MainCoordinator.swift in Sources */,
 				6BFAD5232AB31AC7006F98D6 /* Coordinator.swift in Sources */,
 				6BFAD5302AB34B31006F98D6 /* ContentView.swift in Sources */,
+				6BFAD53A2AB356F5006F98D6 /* SecondTabCoordinator.swift in Sources */,
 				6BFAD4EC2AB216BA006F98D6 /* AppDelegate.swift in Sources */,
 				6BFAD4EE2AB216BA006F98D6 /* SceneDelegate.swift in Sources */,
 				6BFAD52B2AB33904006F98D6 /* OnboardingView.swift in Sources */,

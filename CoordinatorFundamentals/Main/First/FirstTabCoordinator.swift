@@ -1,5 +1,5 @@
 //
-//  MainCoordinator.swift
+//  FirstTabCoordinator.swift
 //  CoordinatorFundamentals
 //
 //  Created by Mommo Sadeghi on 14/09/23.
@@ -9,11 +9,9 @@ import UIKit
 import Foundation
 
 
-class MainCoordinator: Coordinator {
+class FirstTabCoordinator: Coordinator {
     
-    var rootViewController = UITabBarController()
-    
-    
+    var rootViewController = UINavigationController()
     func start() {
         
     }
