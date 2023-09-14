@@ -12,7 +12,15 @@ import Foundation
 class FirstTabCoordinator: Coordinator {
     
     var rootViewController = UINavigationController()
+    
+    lazy var firstViewController: FirstViewController = {
+        let vc = FirstViewController()
+        vc.title = "First title"
+        return vc
+    }()
+    
+    
     func start() {
-        
+        rootViewController.setViewControllers([firstViewController], animated: true)
     }
 }
