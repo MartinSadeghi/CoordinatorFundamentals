@@ -11,8 +11,14 @@ import Foundation
 
 class MainCoordinator: Coordinator {
     
-    var rootViewController = UITabBarController()
+    var rootViewController: UITabBarController
     var childCoordinators = [Coordinator]()
+    
+    init() {
+        rootViewController = UITabBarController()
+        rootViewController.tabBar.isTranslucent = true
+        rootViewController.tabBar.backgroundColor = .lightGray
+    }
     
     func start() {
         
