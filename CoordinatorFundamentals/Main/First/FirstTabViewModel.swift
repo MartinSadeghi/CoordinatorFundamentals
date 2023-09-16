@@ -10,4 +10,8 @@ import Foundation
 
 class FirstTabViewModel: ObservableObject {
     
+    @Published var name = ""
+    @Published var email = ""
+    
+    
 }
