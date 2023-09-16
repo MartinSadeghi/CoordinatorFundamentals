@@ -8,12 +8,13 @@
 import UIKit
 import Foundation
 import Combine
+import SwiftUI
 
 
 class FirstTabCoordinator: Coordinator {
     
     var rootViewController: UINavigationController
-   
+    let viewModel = FirstTabViewModel()
     
     init() {
         rootViewController = UINavigationController()
@@ -24,6 +25,10 @@ class FirstTabCoordinator: Coordinator {
     
     lazy var firstViewController: FirstViewController = {
         let vc = FirstViewController()
+        vc.viewModel = viewModel
+        vc.showDetailRequested = { [weak self] in
+            self?.goToDetail()
+        }
         vc.title = "First title"
         return vc
     }()
@@ -31,5 +36,11 @@ class FirstTabCoordinator: Coordinator {
     
     func start() {
         rootViewController.setViewControllers([firstViewController], animated: true)
+    }
+    
+    func goToDetail() {
+        let detailViewController = UIHostingController(rootView: FirstDetailView(viewModel: viewModel))
+        rootViewController.pushViewController(detailViewController, animated: true)
+        
     }
 }
