@@ -28,7 +28,7 @@ class FirstViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        infoLable?.text = "\(viewModel.name) with email \(viewModel.email)"
+//        infoLable?.text = "\(viewModel.name) with email \(viewModel.email)"
 
     }
     
@@ -49,6 +49,16 @@ class FirstViewController: UIViewController {
         let infoLable = UILabel(frame: CGRect(x: 100, y: 300, width: 300, height: 60))
         self.view.addSubview(infoLable)
         self.infoLable = infoLable
+        
+        viewModel.$email.combineLatest(viewModel.$name)
+            .sink { [weak self] (name, email) in
+                if name.count + email.count > 0 {
+                    self?.infoLable?.text = "\(name) with email \(email)"
+                } else {
+                    self?.infoLable?.text = ""
+                }
+            }
+            .store(in: &subscription)
     }
 
 }
