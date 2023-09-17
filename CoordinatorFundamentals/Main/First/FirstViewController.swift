@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Combine
+
 
 class FirstViewController: UIViewController {
 
@@ -13,13 +15,21 @@ class FirstViewController: UIViewController {
     var viewModel: FirstTabViewModel!
     var showDetailRequested: () -> () = { }
     
+    var subscription = Set<AnyCancellable>()
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .cyan
-        
+        view.backgroundColor = .black
+        setupInfoLable()
+        setupDetailButton()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        infoLable?.text = "\(viewModel.name) with email \(viewModel.email)"
+
     }
     
     
@@ -37,7 +47,6 @@ class FirstViewController: UIViewController {
     
     func setupInfoLable() {
         let infoLable = UILabel(frame: CGRect(x: 100, y: 300, width: 300, height: 60))
-        infoLable.text = "\(viewModel.name) with email \(viewModel.email)"
         self.view.addSubview(infoLable)
         self.infoLable = infoLable
     }
