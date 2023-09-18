@@ -11,14 +11,17 @@ import Combine
 import SwiftUI
 
 
-class FirstTabCoordinator: Coordinator {
+class FirstTabCoordinator: NSObject, Coordinator {
     
     var rootViewController: UINavigationController
     let viewModel = FirstTabViewModel()
     
-    init() {
+    override init() {
         rootViewController = UINavigationController()
         rootViewController.navigationBar.prefersLargeTitles = true
+        super.init()
+        rootViewController.delegate = self
+
     }
     
     deinit {}
@@ -43,4 +46,17 @@ class FirstTabCoordinator: Coordinator {
         rootViewController.pushViewController(detailViewController, animated: true)
         
     }
+}
+
+// Adding UINavigationControllerDelegate to check the state of the viewController
+extension FirstTabCoordinator: UINavigationControllerDelegate {
+   
+    func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
+        if viewController as? UIHostingController<FirstDetailView> != nil {
+            print("Detail will be shown")
+        } else if viewController as? FirstViewController != nil {
+            print("First will be shown")
+        }
+    }
+    
 }
